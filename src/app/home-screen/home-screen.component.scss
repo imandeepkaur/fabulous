@@ -1,0 +1,122 @@
+$standardPurple: #935491;
+
+.top-navigation-bar {
+    margin: 2% 5%;
+    padding: 20px; 
+    .top-bar-item, .nav-item, .logo, .login, .nav-items {
+        display: inline-block;
+    }
+    .top-bar-item {
+        font-size: 20px;
+        font-family: cursive;        
+        margin-right: 20px;
+        letter-spacing: 1px; 
+    }
+    .nav-items { margin-right: 50px; }
+    .nav-item {
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .nav-item:hover, .login:hover {
+        color: $standardPurple;
+    }
+    .logo {
+        margin-left: 30px;
+        .logo-image { height: 90px; margin-top: -25px; }
+    }
+    .login { 
+        color: $standardPurple;
+        cursor: pointer;
+        .user-icon { 
+            border: 1px solid $standardPurple;   
+            border-radius: 50%;
+            padding: 7px;
+        }
+    }
+    .selected-nav-item { color: $standardPurple; font-weight: bold; }
+}
+
+@keyframes appear-slowly {
+    from {opacity: 0; height: 0%; }
+    to {opacity: 1; height: 100%; }
+}
+@keyframes hover {
+    from {transform: scale(1,1) }
+    to {transform: scale(1.1,1.1)}
+}
+.home-page, .signup-page, .login-page {
+    animation-name: appear-slowly;
+    animation-duration: 2s;
+}
+.nav-item:hover, .login:hover, .get-started:hover  {
+    animation-name: hover;
+    animation-duration: 1s;
+}
+.home-page {
+    .home-image-center { 
+        background: url('../../assets/images/home.jpg'); 
+        margin-top: 50px;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heading, .caption, .get-started {
+        font-family: cursive;
+        color: white;
+    }
+    .heading {
+        padding-top: 25vh;
+        font-size: 100px;
+        letter-spacing: 25px;
+    }
+    .caption {
+        font-size: 50px;
+        color: $standardPurple;
+        background-color: white;
+        opacity: 0.8;
+        padding: 10px;
+        margin: 0% 42%;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 30px; 
+    } 
+    .get-started {
+        opacity: 0.8;
+        font-size: 25px; 
+        padding: 10px 0px;
+        color: $standardPurple;
+    }
+}
+
+.login-page, .signup-page {
+    .login-form { margin-top: 6vh; }
+    .form-group {
+        width: 300px;
+        display: inline-block;
+    }
+    .login-heading h3{ 
+        font-size: 35px;
+        color: $standardPurple;
+        margin-top: 15vh;
+        letter-spacing: 2px
+    }
+    .login-button {
+        color: white;
+        background-color: $standardPurple;
+        border-radius: 30px;
+        padding: 8px 40px;
+        font-size: 18px;
+        letter-spacing: 2px
+    }
+    .signup-link {
+        margin-top: 15px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .sign-up-link { color: $standardPurple; margin-left: 10px; letter-spacing: 1px; font-size: 14px; cursor: pointer; }
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+}
+

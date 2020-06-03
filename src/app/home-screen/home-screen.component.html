@@ -1,0 +1,98 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="home-landing-page">
+    <!-- Navigation Bar -->
+    <div class="top-navigation-bar">
+        <div class="pull-left logo">
+            <img src="../../assets/images/logo.PNG" class="logo-image"/>
+        </div>
+        <div class="top-bar-item pull-right">
+            <div class="nav-items">
+                <div class="nav-item"> <span [ngClass]="{'selected-nav-item': selectedItem == 'home'}" (click)="changeSelection('home')"> Home </span> </div>
+                <div class="nav-item"> <span [ngClass]="{'selected-nav-item': selectedItem == 'health'}" (click)="changeSelection('health')"> Health/Fitness </span> </div>
+                <div class="nav-item"> <span class="not-allowed"> Kids </span> </div>
+                <div class="nav-item"> <span class="not-allowed"> Entertainment </span> </div>
+                <div class="nav-item"> <span class="not-allowed"> Community </span> </div>
+            </div>
+            <div class="login" (click)="changeSelection('login')">
+                <span class="glyphicon glyphicon-user user-icon"></span>
+                <span class="login-label"> Log In</span>
+            </div>
+        </div>
+    </div>
+    <!-- Home Page -->
+    <div class="home-page" *ngIf="selectedItem == 'home'">
+        <div class="text-center home-image-center">
+            <div class="heading"> FABULOUS </div>
+            <div class="caption" (click)="changeSelection('signup')">
+                <div class="get-started"> Let's get Started </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Login Page -->
+    <div class="login-page text-center" *ngIf="selectedItem == 'login'">
+        <div class="login-heading"> <h3> Log In </h3> </div>
+        <div class="login-form">
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" />
+            </div>
+            <br/>
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" />
+            </div>
+            <br/>            
+            <div class="form-group">
+                <button class="btn login-button not-allowed"> Log In </button>
+            </div>
+            <div class="signup-link">
+                <span class="link"> Not registered yet? <b class="sign-up-link" (click)="changeSelection('signup')"> Sign Up </b></span>
+            </div>
+        </div>
+    </div>
+    <!-- Sign up Page -->
+    <div class="signup-page text-center" *ngIf="selectedItem == 'signup'">
+        <div class="login-heading"> <h3> Sign Up </h3> </div>
+        <div class="login-form">
+            <div class="form-group">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" />
+            </div>
+            <br/>
+            <div class="form-group">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" />
+            </div>
+            <br/>
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" />
+            </div>
+            <br/>
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" />
+            </div>
+            <br/>            
+            <div class="form-group">
+                <button class="btn login-button not-allowed"> Sign Up </button>
+            </div>
+            <div class="signup-link">
+                <span class="link"> Already a member? <b class="sign-up-link"> Log In </b></span>
+            </div>
+        </div>
+    </div>
+      <!-- Sign up Page -->
+      <div class="health-page text-center" *ngIf="selectedItem == 'health'">
+        <div class="filters-videos">
+            <!-- need to add content from backend here -->
+        </div>
+        <div class="enroll-section">
+            <div class="enroll-card">
+                
+            </div>
+        </div>
+      </div>
+</div>
