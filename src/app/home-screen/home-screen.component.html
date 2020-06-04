@@ -24,7 +24,7 @@
     <div class="home-page" *ngIf="selectedItem == 'home'">
         <div class="text-center home-image-center">
             <div class="heading"> FABULOUS </div>
-            <div class="caption" (click)="changeSelection('signup')">
+            <div class="caption" (click)="changeSelection('health')">
                 <div class="get-started"> Let's get Started </div>
             </div>
             
@@ -80,18 +80,42 @@
                 <button class="btn login-button not-allowed"> Sign Up </button>
             </div>
             <div class="signup-link">
-                <span class="link"> Already a member? <b class="sign-up-link"> Log In </b></span>
+                <span class="link"> Already a member? <b class="sign-up-link" (click)="changeSelection('login')"> Log In </b></span>
             </div>
         </div>
     </div>
       <!-- Sign up Page -->
-      <div class="health-page text-center" *ngIf="selectedItem == 'health'">
+      <div class="health-page" *ngIf="selectedItem == 'health'">
         <div class="filters-videos">
             <!-- need to add content from backend here -->
+            <div class="filters"> <span class="heading"> Filters </span> </div>
+            <div class="videos"> <span class="heading"> Videos </span></div>
         </div>
+        <br/>
         <div class="enroll-section">
             <div class="enroll-card">
-                
+                <div class="card-image"> <img src="../../assets/images/yoga.jpg" class="yoga-image"/> </div>
+                <div class="enroll-header"> <h4>Yoga Class</h4></div>
+                <div class="enroll-details"> <span class="detail">1 hour</span> <span class="detail"> $25 </span></div>
+                <div class="enroll-now">
+                    <button class="enroll-now-button btn" (click)="changeSelection('signup')"> Enroll Now</button>
+                </div>
+            </div>
+            <div class="enroll-card">
+                <div class="card-image"> <img src="../../assets/images/meditation.jpg" class="yoga-image"/> </div>
+                <div class="enroll-header"> <h4>Meditation Class</h4></div>
+                <div class="enroll-details"> <span class="detail">30 mins</span> <span class="detail"> $18 </span></div>
+                <div class="enroll-now">
+                    <button class="enroll-now-button btn" (click)="changeSelection('signup')"> Enroll Now</button>
+                </div>
+            </div>
+            <div class="enroll-card">
+                <div class="card-image"> <img src="../../assets/images/cooking.png" class="yoga-image"/> </div>
+                <div class="enroll-header"> <h4>Nutrition Class</h4></div>
+                <div class="enroll-details"> <span class="detail">45 mins</span> <span class="detail"> $12 </span></div>
+                <div class="enroll-now">
+                    <button class="enroll-now-button btn" (click)="changeSelection('signup')"> Enroll Now</button>
+                </div>
             </div>
         </div>
       </div>

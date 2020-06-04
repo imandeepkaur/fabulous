@@ -120,3 +120,54 @@ $standardPurple: #935491;
     cursor: not-allowed !important;
 }
 
+.health-page {
+    .enroll-card {
+        height: 45vh;
+        width: 18vw;
+        margin: 0px 30px;
+        text-align: center;
+        box-shadow: 3px 3px #8080801c;
+        border: 1px solid #d3d3d3b0;
+        padding-top: 20px;
+        display: inline-block;
+        background-color: white;
+    }
+    .card-image .yoga-image {
+        height: 28vh;
+        width: 15vw
+    }
+    .filters-videos {
+        margin-top: 5vh;
+        text-align: center;
+        height: 41vh;
+        background-color: #8000801c;
+    }
+    .enroll-section { margin-top : -8vh; text-align: center; }
+    .enroll-details .detail { 
+        color: #a0a0a0;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .enroll-now-button {
+        background-color: $standardPurple;
+        color: white;
+        margin-top: 15px;
+    }
+    .enroll-header h4 {
+        font-weight: bold !important;
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    .filters, .videos { 
+        display: inline-block; 
+        .heading {
+            margin-right: 20vw;
+            margin-left: 20vw;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding-top: 15px;
+        }
+    }
+}
+
