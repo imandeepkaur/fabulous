@@ -8,14 +8,6 @@
 1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
 1. [Getting started](#getting-started)
-1. [Running the tests](#running-the-tests)
-1. [Live demo](#live-demo)
-1. [Built with](#built-with)
-1. [Contributing](#contributing)
-1. [Versioning](#versioning)
-1. [Authors](#authors)
-1. [License](#license)
-1. [Acknowledgments](#acknowledgments)
 
 ## Short description
 
@@ -42,13 +34,14 @@ Idea is to build a Tailored solution serving multiple needs hence user don’t n
 1. Enroll for online classes
 1. Join the community, Advertise your business
 1. Create job opportunity within community
+
 ## Demo video
 
-[![Watch the video](https://github.com/imandeepkaur/fabulous/images/team-fabulous.JPG)](https://www.youtube.com/watch?v=U4-97LEDn7c&feature=youtu.be)
+[![Watch the video](https://github.com/imandeepkaur/fabulous/blob/master/images/team-fabulous.JPG)](https://www.youtube.com/watch?v=U4-97LEDn7c&feature=youtu.be)
 
 ## The architecture
 
-![Video transcription/translation app](https://github.com/imandeepkaur/fabulous/images/architecture.JPG)
+![Video transcription/translation app](https://github.com/imandeepkaur/fabulous/blob/master/images/architecture.JPG)
 
 1. The user navigates to the site/app and click on get started to start Health and Fitness routine.
 2. Spring Rest services call the IBM DB2 to render videos based on BasicHealthService.
