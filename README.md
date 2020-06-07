@@ -17,8 +17,6 @@
 1. Taking care of kids, household chores along with working from home has left little to no time for parents to look after own health.
 1. Kids feeling bored while school are closed and cannot play with their friends.
 1. Businesses like gym, fitness classes, dance classes, summer camps etc. put on hold due to large head counts to avoid the spread of virus resulting businesses are in loss and looking for remote working options.
-1. Hence there is a need for a one stop solution for all these challenges – people trying to attain work life balance along with focus on health and fitness, for kids to keep them engaged in a healthy way and also for small business owners so they can provide their services remotely.
-
 
 ### How can technology help?
 
@@ -37,11 +35,11 @@ Idea is to build a Tailored solution serving multiple needs hence user don’t n
 
 ## Demo video
 
-[![Watch the video](https://github.com/imandeepkaur/fabulous/blob/master/images/team-fabulous.JPG)](https://www.youtube.com/watch?v=U4-97LEDn7c&feature=youtu.be)
+[![Watch the video](https://github.com/imandeepkaur/fabulous/blob/master/images/team-fabulous.jpg)](https://www.youtube.com/watch?v=U4-97LEDn7c&feature=youtu.be)
 
 ## The architecture
 
-![Video transcription/translation app](https://github.com/imandeepkaur/fabulous/blob/master/images/architecture.JPG)
+![Video transcription/translation app](https://github.com/imandeepkaur/fabulous/blob/master/images/architecture.jpg)
 
 1. The user navigates to the site/app and click on get started to start Health and Fitness routine.
 2. Spring Rest services call the IBM DB2 to render videos based on BasicHealthService.
@@ -54,7 +52,7 @@ Idea is to build a Tailored solution serving multiple needs hence user don’t n
 
 ## Project roadmap
 
-![Roadmap](roadmap.jpg)
+![Roadmap](https://github.com/imandeepkaur/fabulous/blob/master/images/roadmap.jpg)
 
 ## Getting started
 
